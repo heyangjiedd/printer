@@ -37,7 +37,7 @@
           <span class="flw">{{ title.remark }}</span>
         </div>
       </div>
-      <table border="1" class="table-list">
+      <table class="table-list">
         <tr>
           <th class="w15">序号</th>
           <th class="w15">产品名称</th>
@@ -137,7 +137,6 @@ export default {
       totalNumCN: "",
     };
   },
-
   methods: {
     handleGoBack() {
       this.$router.go(-1);
@@ -164,6 +163,7 @@ export default {
   flex-direction: column;
   margin-top: 50px;
   color: black;
+  font-weight: bold;
   .btn {
     width: 794px;
     margin-bottom: 40px;
@@ -219,11 +219,15 @@ export default {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 20px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
     tr {
       th {
         padding: 10px;
         text-align: center;
         font-weight: bold;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
       }
       .w10 {
         width: 10%;
@@ -233,6 +237,8 @@ export default {
       }
       td {
         padding: 10px;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
       }
     }
   }
