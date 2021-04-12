@@ -174,7 +174,8 @@
 </template>
 
 <script>
-import ToString from "../../utils/index";
+// import ToString from "../../utils/index";
+import ToString from "rmb-x";
 const columns = [
   {
     title: "序号",

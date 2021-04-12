@@ -7310,6 +7310,11 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+rmb-x@^0.1.2:
+  version "0.1.2"
+  resolved "https://npm.biaoguoworks.com/rmb-x/-/rmb-x-0.1.2.tgz#84c508a49f8ce4b722a7cb8edf3856aa96fd1b64"
+  integrity sha1-hMUIpJ+M5Lcip8uO3zhWqpb9G2Q=
+
 run-async@^2.4.0:
   version "2.4.1"
   resolved "http://39.100.136.61:9001/run-async/-/run-async-2.4.1.tgz#8440eccf99ea3e70bd409d49aab88e10c189a455"
