@@ -3,12 +3,12 @@
     style="display: flex;justify-content: center;align-items: center;flex-direction: column;"
   >
     <Detail id="printTest"></Detail>
-    <div class="btn">
+    <div class="btn" v-show="show">
       <a-row>
         <a-button
           :style="{ marginLeft: '8px', float: 'right' }"
           type="primary"
-          v-print="'printTest'"
+          @click="handlePrint"
         >
           打印
         </a-button>
@@ -27,10 +27,22 @@
 import Detail from "./detail";
 export default {
   name: "index",
+  data() {
+    return {
+      show: true,
+    };
+  },
   components: {
     Detail: Detail,
   },
   methods: {
+    handlePrint() {
+      this.show = false;
+      this.$nextTick(() => {
+        window.print();
+        this.show = true;
+      });
+    },
     handleGoBack() {
       this.$router.go(-1);
     },
@@ -38,10 +50,6 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-.ahh {
-  font-size: 40px;
-  height: 100px;
-}
 .btn {
   width: 794px;
   margin-bottom: 40px;
