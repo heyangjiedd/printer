@@ -164,13 +164,8 @@ export default {
   margin-top: 50px;
   color: black;
   font-weight: bold;
-  .btn {
-    width: 770px;
-    box-sizing: border-box;
-    margin-bottom: 40px;
-  }
   .container {
-    width: 794px;
+    width: 770px;
     padding: 10px;
   }
   .title {
