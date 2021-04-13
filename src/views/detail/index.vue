@@ -51,7 +51,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .btn {
-  width: 794px;
+  width: 770px;
   margin-bottom: 40px;
 }
 </style>

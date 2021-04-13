@@ -120,7 +120,7 @@
         <a-col :span="12">
           <a-form-item label="纳税码" v-bind="formItemLayout1">
             <!-- <a-input placeholder="输入纳税码" v-model="title.taxesNo" /> -->
-            915110112MA6AB17W6G
+            91510112MA6AB17W6G
           </a-form-item>
         </a-col>
         <a-col :span="24">

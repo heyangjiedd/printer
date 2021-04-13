@@ -48,7 +48,7 @@
           <th class="w10">金额(元)</th>
           <th class="w15">备注</th>
         </tr>
-        <tr v-for="(item, index) in data" :key="index">
+        <tr v-for="(item, index) in data" :key="index" class="center">
           <td>{{ item.order }}</td>
           <td>{{ item.product }}</td>
           <td>{{ item.specifications }}</td>
@@ -59,9 +59,9 @@
           <td>{{ item.remark }}</td>
         </tr>
         <tr>
-          <td colspan="4">合计金额大写（人民币）：{{ totalNumCN }}</td>
+          <td colspan="5">合计金额大写（人民币）：{{ totalNumCN }}</td>
           <td>小写：</td>
-          <td colspan="3">{{ totalNum }}</td>
+          <td colspan="2">{{ totalNum }}</td>
         </tr>
       </table>
 
@@ -86,7 +86,7 @@
         <div class="span2">
           <span class="w100">纳税码</span>
           <span class="mg-10">:</span>
-          <span class="flw">915110112MA6AB17W6G</span>
+          <span class="flw">91510112MA6AB17W6G</span>
         </div>
       </div>
       <div class="box">
@@ -94,7 +94,7 @@
           <span class="w100">公司地址</span>
           <span class="mg-10">:</span>
           <span class="flw"
-            >四川省成都市龙泉驿区龙泉街道驿都中路331号B区3栋86</span
+            >四川省成都市龙泉驿区龙泉街道驿都中路331号B区3栋86-88号</span
           >
         </div>
       </div>
@@ -165,7 +165,8 @@ export default {
   color: black;
   font-weight: bold;
   .btn {
-    width: 794px;
+    width: 770px;
+    box-sizing: border-box;
     margin-bottom: 40px;
   }
   .container {
@@ -221,6 +222,11 @@ export default {
     margin-bottom: 20px;
     border-left: 2px solid black;
     border-top: 2px solid black;
+    .center {
+      td {
+        text-align: center;
+      }
+    }
     tr {
       th {
         padding: 10px;
